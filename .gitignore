@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+dist
+*.log
+*.swp
+*.cache
+*.idea
+package-lock.json
+.yarn/**/*
+.yarnrc
+src/assets/ss/fonts/**/*
+src/assets/js/vendor/**/*
+!src/assets/js/vendor/foundation-what-input.min.js
+!src/assets/js/vendor/jquery-3.5.1.min.js

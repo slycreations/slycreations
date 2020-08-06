@@ -1,0 +1,28 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+BROWSERSLIST_CONFIG: ".browserslistrc"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"
+  # Paths to static assets
+  assets:
+    # "src/assets/**/**/*"
+    - "src/assets/**/vendor/**/*"
+    - "src/assets/**/fonts/**/*"
+    - "src/pages/**/images/*"
+    - "src/pages/**/**/images/*" 
+    - "src/pages/**/files/**/*" 
+    - "!src/assets/js/vendor/*.js"
+  # Paths to Foundation sccs libraries
+  sass:
+    - "node_modules/foundation-sites/scss"
+    - "node_modules/motion-ui/src"
+  # Paths to JavaScript entry points for Foundation
+  entries:
+    - "node_modules/what-input/dist/what-input.min.js"
+    - "node_modules/foundation-sites/dist/js/foundation.min.js"
+  javascript:  
+    # Paths to your own project code are here  
+    - "src/assets/js/app.js"
