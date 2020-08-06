@@ -47,8 +47,8 @@ function copy() {
 
 // Copy updated js vendor files
 function copyjs() {
-  return gulp.src('src/assets/js/vendor/*.js')
-    .pipe(gulp.dest(PATHS.dist + '/js/vendor/'));
+  return gulp.src('src/assets/js/vendor/**/*.js')
+    .pipe(gulp.dest(PATHS.dist + '/assets/js/vendor/'));
 }
 
 // Copy page templates into finished HTML files
@@ -73,7 +73,7 @@ function resetPages(done) {
 // Generate a style guide from the Markdown content and HTML template in styleguide/
 function styleGuide(done){
   return sherpa('src/styleguide/index.md', {
-    output: PATHS.dist + '/special/styleguide/index.html',
+    output: PATHS.dist + '/styleguide.html',
     template: 'src/styleguide/template.html'
   }, done );  
 }
@@ -97,15 +97,15 @@ function sass() {
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/ss'))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
 
 // Generate Foundation JS
 function foundationJs(done) {
-  gulp.src(PATHS.entries)
-    .pipe($.concat('foundation-what-input.min.js'))
-    .pipe(gulp.dest('src/assets/js/vendor/'));
+ // gulp.src(PATHS.entries)
+ //   .pipe($.concat('foundation-what-input.min.js'))
+ //   .pipe(gulp.dest(PATHS.dist + '/assets/js/vendor'));
   done();
 }
 // Generate our JS
@@ -117,14 +117,14 @@ function javascript(done) {
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/js'));
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
   done();
 }
 
 // Copy images to the "dist" folder
 function images() {
   return gulp.src('src/assets/img/**/*')
-    .pipe(gulp.dest(PATHS.dist + '/images'));
+    .pipe(gulp.dest(PATHS.dist + '/assets/images'));
 }
 
 // Start a server with BrowserSync to preview the site in
@@ -149,7 +149,6 @@ function watch() {
   gulp.watch('src/helpers/**/*.js').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('change', gulp.series(sass, browser.reload));
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/js/vendor/*.js').on('all', gulp.series(copyjs, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/*').on('all', gulp.series(styleGuide, browser.reload));
 }
