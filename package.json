@@ -12,7 +12,7 @@
   "dependencies": {
     "foundation-sites": "6.6.3",
     "jquery": "^3.5.1",
-    "motion-ui": "^2.0.3",
+    "motion-ui": "^2.0.4",
     "what-input": "5.2.12"
   },
   "devDependencies": {
