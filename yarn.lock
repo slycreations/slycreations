@@ -2479,10 +2479,10 @@ fork-stream@^0.0.4:
   resolved "https://registry.yarnpkg.com/fork-stream/-/fork-stream-0.0.4.tgz#db849fce77f6708a5f8f386ae533a0907b54ae70"
   integrity sha1-24Sfznf2cIpfjzhq5TOgkHtUrnA=
 
-foundation-sites@6.6.3:
-  version "6.6.3"
-  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.6.3.tgz#8ca5f246357db69e6a0e73351ce06aa8acce6540"
-  integrity sha512-8X93wUAmUg1HhVv8uWMWnwoBLSQWSmFImJencneIZDctswn724Bq/MV1cbPZN/GFWGOB/9ngoQHztfzd4+ovCg==
+foundation-sites@6.7.3:
+  version "6.7.3"
+  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.7.3.tgz#e6e298ef720a7569d874c48ee83fd855409333c2"
+  integrity sha512-HgQA6iUQTEkRSeNwiRQH2PvTXkXGBfBpRS6CTm2auhKpyU4Tea7so3IPKrazSciE7nyv1Vp9WNKdH9fBPLbGeA==
 
 fragment-cache@^0.2.1:
   version "0.2.1"
