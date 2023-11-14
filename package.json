@@ -16,7 +16,7 @@
     "what-input": "5.2.12"
   },
   "devDependencies": {
-    "@babel/core": "7.23.2",
+    "@babel/core": "7.23.3",
     "@babel/preset-env": "7.23.2",
     "@babel/register": "^7.22.15",
     "autoprefixer": "^9.8.8",
