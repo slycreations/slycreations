@@ -37,7 +37,7 @@
     "gulp-uglify": "^3.0.2",
     "js-yaml": "^4.1.0",
     "panini": "^1.7.2",
-    "rimraf": "^5.0.7",
+    "rimraf": "^6.0.0",
     "style-sherpa": "^1.0.2",
     "yargs": "^17.7.2"
   },
