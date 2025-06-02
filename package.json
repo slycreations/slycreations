@@ -21,7 +21,7 @@
     "@babel/register": "^7.27.1",
     "autoprefixer": "^9.8.8",
     "browser-sync": "^3.0.4",
-    "gulp": "^5.0.0",
+    "gulp": "^5.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^3.0.0",
