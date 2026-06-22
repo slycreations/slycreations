@@ -2331,14 +2331,14 @@ graceful-fs@^4.2.10, graceful-fs@^4.2.11, graceful-fs@^4.2.8:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
-gulp-babel@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-babel/-/gulp-babel-8.0.0.tgz#e0da96f4f2ec4a88dd3a3030f476e38ab2126d87"
-  integrity sha512-oomaIqDXxFkg7lbpBou/gnUkX51/Y/M2ZfSjL2hdqXTAlSWZcgZtd2o0cOH0r/eE8LWD0+Q/PsLsr2DKOoqToQ==
+gulp-babel@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-babel/-/gulp-babel-8.1.0.tgz#d0c1cb4b53d6002eec350b866b54e9807a4c7ea3"
+  integrity sha512-QtFF9+h3xrVjfo79h7HCY4S8k4qNEcOz7ffpfavlscv0F0glfTQyv4kEYvX+YykTm4qllMF4aZfjeqLjzddTYA==
   dependencies:
     plugin-error "^1.0.1"
     replace-ext "^1.0.0"
-    through2 "^2.0.0"
+    through2 "^3.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
 gulp-clean-css@^4.3.0:
@@ -4354,7 +4354,7 @@ through2@^2.0.0, through2@^2.0.3, through2@^2.0.5, through2@~2.0.0:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-through2@^3.0.1:
+through2@^3.0.0, through2@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.2.tgz#99f88931cfc761ec7678b41d5d7336b5b6a07bf4"
   integrity sha512-enaDQ4MUyP2W6ZyT6EsMzqBPZaM/avg8iuo+l2d3QCs0J+6RaqkHV/2/lOwDTueBHeJ/2LG9lrLW3d5rWPucuQ==
